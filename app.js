@@ -1,2 +1,8 @@
-var namePrompt=prompt("What is your name?");
-document.body.querySelector(".name").innerHTML=namePrompt;
+var inputBill = Number(prompt("What is your bill"))
+var taxAmount=inputBill*.07;
+var taxTotalBill=inputBill+taxAmount;
+var tipAmount= taxTotalBill*.05;
+var total=tipAmount+taxTotalBill;
+var element= document.body.querySelector(".box");
+
+element.innerHTML=total;
